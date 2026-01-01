@@ -1,7 +1,7 @@
 import Bicicleta from '../models/Bicicleta.js';
 
 /* =========================
-   GET /api/bicicletas
+  GET /api/bicicletas
    ========================= */
 export const listarBicicletas = async (req, res) => {
   try {
@@ -13,7 +13,7 @@ export const listarBicicletas = async (req, res) => {
 };
 
 /* =========================
-   GET /api/bicicletas/:id
+  GET /api/bicicletas/:id
    ========================= */
 export const obtenerBicicletaPorId = async (req, res) => {
   try {
@@ -30,7 +30,7 @@ export const obtenerBicicletaPorId = async (req, res) => {
 };
 
 /* =========================
-   POST /api/bicicletas
+  POST /api/bicicletas
    ========================= */
 export const crearBicicleta = async (req, res) => {
   try {
@@ -45,7 +45,7 @@ export const crearBicicleta = async (req, res) => {
 };
 
 /* =========================
-   PUT /api/bicicletas/:id
+  PUT /api/bicicletas/:id
    ========================= */
 export const actualizarBicicleta = async (req, res) => {
   try {
