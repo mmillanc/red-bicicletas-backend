@@ -11,6 +11,10 @@ import usersRouter from './routes/users.js';
 
 const app = express();
 
+app.use(cors({
+  origin: 'http://localhost:5173' // Vite
+}));
+
 /* Necesario para __dirname en ES Modules */
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

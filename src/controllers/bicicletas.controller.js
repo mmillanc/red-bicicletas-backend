@@ -34,19 +34,13 @@ export const obtenerBicicletaPorId = async (req, res) => {
    ========================= */
 export const crearBicicleta = async (req, res) => {
   try {
-    const { color, modelo, lat, lng } = req.body;
-
-    const nuevaBicicleta = new Bicicleta({
-      color,
-      modelo,
-      lat,
-      lng
-    });
-
+    const nuevaBicicleta = new Bicicleta(req.body);
     await nuevaBicicleta.save();
     res.status(201).json(nuevaBicicleta);
   } catch (error) {
-    res.status(400).json({ message: 'Error al crear bicicleta' });
+    res.status(400).json({
+      message: error.message
+    });
   }
 };
 
