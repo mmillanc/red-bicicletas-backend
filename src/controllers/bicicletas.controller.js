@@ -66,7 +66,7 @@ export const actualizarBicicleta = async (req, res) => {
 };
 
 /* =========================
-   DELETE /api/bicicletas/:id
+  DELETE /api/bicicletas/:id
    ========================= */
 export const eliminarBicicleta = async (req, res) => {
   try {
